@@ -6,11 +6,12 @@ strategy:
     mac:
       imageName: "macOS-latest"
       nodeVersion: "14.x"
-      buildPlatform: "mac"
     windows:
       imageName: "windows-latest"
       nodeVersion: "14.x"
-      buildPlatform: "win"
+    linux:
+      imageName: "ubuntu-latest"
+      nodeVersion: "14.x"
 
 pool:
   vmImage: $(imageName)
